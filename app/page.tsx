@@ -1,12 +1,15 @@
 import Link from "next/link";
+import NavBar from "./components/NavBar";
+import Hero from "./components/Hero";
+import HeroRunnningText from "./components/HeroRunningText";
 
 export default function Home() {
   return (
     <>
-      <Link href="/"></Link>
-      <Link href="/home"></Link>
-      <Link href="pages/services">Service</Link>
-    
+    <NavBar />
+    <Hero />
+    <HeroRunnningText />
+
     </>
   );
 }
