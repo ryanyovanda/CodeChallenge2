@@ -2,11 +2,13 @@ import Image from "next/image";
 import Overview1 from "../../public/overview-1.webp"
 import Overview2 from "../../public/overview-2.webp"
 import {config} from "../../config";
+import Link from "next/link";
+
 
 const CompanyOverview = () =>{
     return(
         <>
-        <div className="flex h-auto w-screen flex-row gap-5 px-[60px] flex-nowrap ">
+        <div className="flex h-auto w-full xs:px-0 md:flex-row xs:flex-col-reverse gap-5 md:px-[60px] xs:px-0 pt-11 ">
             <div className="flex flex-col w-full">
                 <div className=""><Image
                 className=" w-[650px]"
@@ -18,25 +20,38 @@ const CompanyOverview = () =>{
                 alt="Company Overview 2">
                 </Image></div>
                 </div>
-            <div className="flex flex-col bg pt-32">
+            <div className="flex flex-col bg md:pt-32 xs:pt-10 gap-6 px-5">
                 
-            <div className="ml-[-48px]">
+            <div className="md:ml-[-48px]">
                 <p>(Unleashing Potential)</p>
-                <h1 className="text-[90px] font-bold leading-none">
+                <h1 className="xs:text-5xl md:text-[90px] font-bold leading-none">
                 Welcome to our Digital Success Stories</h1>
             </div>
-                <div>Explore our professional services designed to cater to all your requirements.
-                Explore our tailored professional services designed to meet all your needs. From strategy to execution, we’ve got you covered for impactful results and seamless experiences.</div>
+            <div className="flex leading-loose flex-col gap-6">
+                <div className="font-bold text-xl">Explore our professional services designed to cater to all your requirements.</div>
+                <div>
+                <div className="text-xl">
+                Explore our tailored professional services designed to meet all your needs. From strategy to execution, weve got you covered for impactful results and seamless experiences.</div>
+                </div>
+                <div>
+                <div className="bg-transparent border-[1px] font-bold border-[#232323] rounded-3xl h-auto md:w-[20%] xs:w-[50%] px-6 py-1 flex items-center justify-center hover:bg-white hover:border-white">
+                        <Link href="/">Contact Us</Link>
+                    </div>
+                </div>
+                </div>
             </div>
             
         </div>
-        <div className="flex flex-row justify-between">
+        <div className="flex xs:flex-col md:flex-row justify-evenly">
         {config.achievements.numbers.map((achievement) => (
-        <div key={achievement.title} className="flex px-[60px] justify-between py-9">
-                <div className="flex flex-col items-center">
-                    <h1>{achievement.total}</h1>
+        <div key={achievement.title} className="flex px-[60px] py-9 flex-col font-bold pop-up">
+                <div className="relative items-center text-8xl w-full h-[72px] overflow-hidden border-b border-black text-center gradient">
+                    <h1 className="">{achievement.total}</h1>
+                </div>
+                <div className="text-xl text-center">
                     <div>{achievement.title}</div>
-           </div>
+                </div>
+           
         </div>       
         ))}
         </div>
