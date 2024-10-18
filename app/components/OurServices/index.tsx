@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { STRATEGY, IMPLEMENTATION, MARKETING } from "@/constant/ourservices";
 const OurServices = () => {
   return (
