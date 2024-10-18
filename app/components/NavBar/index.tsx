@@ -27,7 +27,6 @@ const NavBar = () => {
                                 <Link href="/teams" className="text-white hover:bg-white hover:text-[#232323] rounded-lg p-2 ease-in-out duration-300 transition">Teams</Link>
                             </div>
                         </div>
-                        {/* Mobile button, visible only on small screens */}
                         <button 
                             className="md:hidden inline-flex items-center justify-center p-2 text-white hover:text-white " 
                             onClick={toggleNavbar}
@@ -45,10 +44,10 @@ const NavBar = () => {
                     </div>
                 </div>
                 <div className={`md:hidden ${isClick ? 'block' : 'hidden'}`}>
-                    <Link href="#" className="block text-white hover:bg-white hover:text-[#232323] rounded-lg p-2">Home</Link>
-                    <Link href="#" className="block text-white hover:bg-white hover:text-[#232323] rounded-lg p-2">Services</Link>
-                    <Link href="#" className="block text-white hover:bg-white hover:text-[#232323] rounded-lg p-2">About Us</Link>
-                    <Link href="#" className="block text-white hover:bg-white hover:text-[#232323] rounded-lg p-2">Teams</Link>
+                    <Link href="/" className="block text-white hover:bg-white hover:text-[#232323] rounded-lg p-2">Home</Link>
+                    <Link href="/services" className="block text-white hover:bg-white hover:text-[#232323] rounded-lg p-2">Services</Link>
+                    <Link href="/about-us" className="block text-white hover:bg-white hover:text-[#232323] rounded-lg p-2">About Us</Link>
+                    <Link href="/teams" className="block text-white hover:bg-white hover:text-[#232323] rounded-lg p-2">Teams</Link>
                 </div>
             </nav>
         </>
