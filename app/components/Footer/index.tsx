@@ -17,8 +17,8 @@ const Footer = () =>{
             <div className="hover:text-[#ff7d4a] transition duration-300 ease-in-out"> +62 818 0884 5584 </div>
             </div>
             <div className="flex gap-2 flex-row xs:w-[30%]">
-                <Link className=" bg-transparent border-[1px] border-white rounded-3xl h-auto w-auto px-6 py-1 flex items-center justify-center hover:bg-white hover:border-white" href="#">Instagram</Link>
-                <Link className=" bg-transparent border-[1px] border-white rounded-3xl h-auto w-auto px-6 py-1 flex items-center justify-center hover:bg-white hover:border-white" href="#">Linkedin</Link>
+                <Link className=" bg-transparent border-[1px] border-white rounded-3xl h-auto w-auto px-6 py-1 flex items-center justify-center hover:bg-white hover:border-white hover:text-[#232323]" href="#">Instagram</Link>
+                <Link className=" bg-transparent border-[1px] border-white rounded-3xl h-auto w-auto px-6 py-1 flex items-center justify-center hover:bg-white hover:border-white hover:text-[#232323]" href="#">Linkedin</Link>
             </div>
         </div>
         </div>

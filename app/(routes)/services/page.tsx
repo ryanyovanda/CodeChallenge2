@@ -9,8 +9,8 @@ const Services = () => {
         <>
         <ContactButton />
         <NavBar />
-        <Testimony />
         <OurServices />
+        <Testimony />
         <Footer />
         </>
     )

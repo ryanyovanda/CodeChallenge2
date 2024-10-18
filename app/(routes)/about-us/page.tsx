@@ -1,13 +1,18 @@
 import NavBar from "@/app/components/NavBar";
 import Footer from "@/app/components/Footer";
 import ContactButton from "@/app/components/ContactButton";
+import HeaderAboutUs from "@/app/components/AboutUs/Header";
+import Culture from "@/app/components/AboutUs/Culture";
+import CompanyHistory from "@/app/components/AboutUs/History";
 
 const Services = () => {
     return(
         <>
         <NavBar />
         <ContactButton />
-        <h1>about us</h1>
+        <HeaderAboutUs />
+        <Culture />
+        <CompanyHistory />
         <Footer />
         </>
     )

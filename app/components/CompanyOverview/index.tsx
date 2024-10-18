@@ -8,7 +8,7 @@ import Link from "next/link";
 const CompanyOverview = () =>{
     return(
         <>
-        <div className="flex h-auto w-full xs:px-0 md:flex-row xs:flex-col-reverse gap-5 md:px-[60px] xs:px-0 pt-11 ">
+        <div className="flex h-auto w-full xs:px-0 md:flex-row xs:flex-col-reverse gap-5 md:px-[60px] pt-11 ">
             <div className="flex flex-col w-full">
                 <div className=""><Image
                 className=" w-[650px]"

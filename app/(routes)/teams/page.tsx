@@ -1,6 +1,7 @@
 import NavBar from "@/app/components/NavBar";
 import Footer from "@/app/components/Footer";
 import ContactButton from "@/app/components/ContactButton";
+import People from "@/app/components/Teams/People";
 
 
 const Services = () => {
@@ -8,7 +9,7 @@ const Services = () => {
         <>
         <NavBar />
         <ContactButton />
-        <h1>teams</h1>
+        <People />
         <Footer />
         </>
     )
