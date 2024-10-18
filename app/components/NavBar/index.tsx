@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import LogoWhite from "../../public/logo white.png";
+import LogoWhite from "/public/logo white.png";
 import React, { useState } from "react";
 
 const NavBar = () => {
@@ -20,11 +20,11 @@ const NavBar = () => {
                             </div>
                         </div>
                         <div className="hidden md:block">
-                            <div className="ml-4 flex items-center space-x-4">
-                                <Link href="#" className="text-white hover:bg-white hover:text-black rounded-lg p-2">Home</Link>
-                                <Link href="#" className="text-white hover:bg-white hover:text-black rounded-lg p-2">Services</Link>
-                                <Link href="#" className="text-white hover:bg-white hover:text-black rounded-lg p-2">About Us</Link>
-                                <Link href="#" className="text-white hover:bg-white hover:text-black rounded-lg p-2">Teams</Link>
+                            <div className="ml-4 flex items-center space-x-4 ">
+                                <Link href="/" className="text-white hover:bg-white hover:text-[#232323] rounded-lg p-2 ease-in-out duration-300 transition">Home</Link>
+                                <Link href="/services" className="text-white hover:bg-white hover:text-[#232323] rounded-lg p-2 ease-in-out duration-300 transition">Services</Link>
+                                <Link href="/about-us" className="text-white hover:bg-white hover:text-[#232323] rounded-lg p-2 ease-in-out duration-300 transition">About Us</Link>
+                                <Link href="/teams" className="text-white hover:bg-white hover:text-[#232323] rounded-lg p-2 ease-in-out duration-300 transition">Teams</Link>
                             </div>
                         </div>
                         {/* Mobile button, visible only on small screens */}
@@ -45,10 +45,10 @@ const NavBar = () => {
                     </div>
                 </div>
                 <div className={`md:hidden ${isClick ? 'block' : 'hidden'}`}>
-                    <Link href="#" className="block text-white hover:bg-white hover:text-black rounded-lg p-2">Home</Link>
-                    <Link href="#" className="block text-white hover:bg-white hover:text-black rounded-lg p-2">Services</Link>
-                    <Link href="#" className="block text-white hover:bg-white hover:text-black rounded-lg p-2">About Us</Link>
-                    <Link href="#" className="block text-white hover:bg-white hover:text-black rounded-lg p-2">Teams</Link>
+                    <Link href="#" className="block text-white hover:bg-white hover:text-[#232323] rounded-lg p-2">Home</Link>
+                    <Link href="#" className="block text-white hover:bg-white hover:text-[#232323] rounded-lg p-2">Services</Link>
+                    <Link href="#" className="block text-white hover:bg-white hover:text-[#232323] rounded-lg p-2">About Us</Link>
+                    <Link href="#" className="block text-white hover:bg-white hover:text-[#232323] rounded-lg p-2">Teams</Link>
                 </div>
             </nav>
         </>

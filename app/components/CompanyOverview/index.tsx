@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Overview1 from "../../public/overview-1.webp"
-import Overview2 from "../../public/overview-2.webp"
+import Overview1 from "/public/overview-1.webp"
+import Overview2 from "/public/overview-2.webp"
 import {config} from "../../config";
 import Link from "next/link";
 
@@ -45,7 +45,7 @@ const CompanyOverview = () =>{
         <div className="flex xs:flex-col md:flex-row justify-evenly">
         {config.achievements.numbers.map((achievement) => (
         <div key={achievement.title} className="flex px-[60px] py-9 flex-col font-bold pop-up">
-                <div className="relative items-center text-8xl w-full h-[72px] overflow-hidden border-b border-black text-center gradient">
+                <div className="relative items-center text-8xl w-full h-[72px] overflow-hidden border-b border-[#232323] text-center gradient">
                     <h1 className="">{achievement.total}</h1>
                 </div>
                 <div className="text-xl text-center">

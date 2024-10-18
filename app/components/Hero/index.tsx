@@ -1,6 +1,6 @@
 import Image from "next/image";
-import ImageHero from "../../public/hero.png";
-import Arrow from "../../public/arrow-down-right-svgrepo-com.svg"
+import ImageHero from "/public/hero.png";
+import Arrow from "/public/arrow-down-right-svgrepo-com.svg"
 import Link from "next/link";
 
 const Hero = () =>{

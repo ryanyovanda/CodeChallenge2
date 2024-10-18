@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import LogoWhite from "../../public/logo white.png";
+import LogoWhite from "/public/logo white.png";
 
 const Footer = () =>{
     return(

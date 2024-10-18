@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Contact from "../../public/whatsapp.webp";
+import Contact from "/public/whatsapp.webp";
 import Link from "next/link";
 
 const ContactButton = () =>{

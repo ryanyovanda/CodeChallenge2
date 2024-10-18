@@ -1,4 +1,4 @@
-import BgParalax from"../../public/bgparalax.webp"
+import BgParalax from"/public/bgparalax.webp"
 import { config } from "../../config";
 
 const ServicesHome = () =>{
