@@ -35,7 +35,7 @@ const CompanyOverview = () =>{
                 </div>
                 <div>
                 <div className="bg-transparent border-[1px] font-bold border-[#232323] rounded-3xl h-auto md:w-[20%] xs:w-[50%] px-6 py-1 flex items-center justify-center hover:bg-white hover:border-white">
-                        <Link href="/">Contact Us</Link>
+                        <Link href="/about-us">Contact Us</Link>
                     </div>
                 </div>
                 </div>

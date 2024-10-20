@@ -1,5 +1,6 @@
 import BgParalax from"/public/bgparalax.webp"
 import { config } from "../../config";
+import Link from "next/link";
 
 const ServicesHome = () =>{
     return(
@@ -16,7 +17,7 @@ const ServicesHome = () =>{
                 <div><h2 className="xs:text-4xl md:text-7xl font-bold">Why Vanda Studio</h2></div>
                 </div>
                 <div>
-                    <div className="border rounded-full p-4 text-sm">VIEW ALL CAPABILITIES ●</div>
+                    <div className="border rounded-full p-4 text-sm hover:bg-white hover:text-[#232323] transition ease-in-out duration-300"><Link href="/services">VIEW ALL CAPABILITIES ●</Link></div>
                 </div>
             </div>
             {config.agency.services.map((service) => (

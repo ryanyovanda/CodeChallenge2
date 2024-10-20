@@ -1,15 +1,16 @@
 import { STRATEGY, IMPLEMENTATION, MARKETING } from "@/constant/ourservices";
+import Image from "next/image";
 const OurServices = () => {
   return (
     <>
       <div className="font-bold">
-        <div className="flex md:px-[240px] justify-center text-7xl py-6">
+        <div className="flex md:px-[240px] justify-center text-7xl py-6 px-6">
           <h1>Our Services</h1>
         </div>
       </div>
       <div className="bg-[#e1e1e1]">
         <div className="flex xs:px-6 xs:justify-center md:px-[255px] xs:flex-row md:flex-col ">
-          <div className="flex xs:flex-col md:flex-row gap-6 justify-between">
+          <div className="flex xs:flex-col md:flex-row gap-6 justify-between py-6">
             
             {/* Strategy Section */}
             <div>
@@ -19,8 +20,15 @@ const OurServices = () => {
               {STRATEGY.map((service, index) => (
                 <div
                   key={index}
-                  className="flex flex-row items-center  hover:bg-white rounded-full py-2 px-2 ease-in-out duration-300 transition"
+                  className="flex flex-row items-center gap-2 hover:bg-white rounded-full py-2 px-2  ease-in-out duration-300 transition"
                 >
+                  <Image
+                    src={service.image}
+                    alt={service.alt}
+                    width={22}
+                    height={22}
+                    >
+                    </Image>
                   <div>
                 
                   </div>
@@ -42,6 +50,15 @@ const OurServices = () => {
                   className="flex flex-row items-center gap-2 hover:bg-white rounded-full py-2 px-2  ease-in-out duration-300 transition"
                 >
                   <div>
+                    <Image
+                    src={service.image}
+                    alt={service.alt}
+                    width={22}
+                    height={22}
+                    >
+                    </Image>
+                  </div>
+                  <div>
                 
                   </div>
                   <div className="text-[16px] font-semibold">
@@ -61,6 +78,13 @@ const OurServices = () => {
                   key={index}
                   className="flex flex-row items-center gap-2 hover:bg-white rounded-full py-2 px-2  ease-in-out duration-300 transition"
                 >
+                  <Image
+                    src={service.image}
+                    alt={service.alt}
+                    width={22}
+                    height={22}
+                    >
+                    </Image>
                   <div>
                 
                  

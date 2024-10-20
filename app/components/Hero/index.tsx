@@ -30,15 +30,15 @@ const Hero = () =>{
                         <p>We are Vanda Studio that specializes in providing a wide range of media services</p>
                     </div>
                 </div>
-                <div className="w-full py-6 flex flex-row gap-4">
-                    <div className="bg-transparent border-[1px] border-[#232323] rounded-3xl h-auto w-auto px-6 py-1 flex items-center justify-center hover:bg-white hover:border-white">
-                        <Link href="/">Strategy</Link>
+                <div className="py-6 flex flex-row gap-2 text-sm">
+                    <div className="bg-transparent border-[1px] border-[#232323] rounded-3xl h-auto w-auto px-4 py-1 flex items-center justify-center hover:bg-white hover:border-white">
+                        <Link href="/services">Strategy</Link>
                     </div>
-                    <div className="bg-transparent border-[1px] border-[#232323] rounded-3xl h-auto w-auto px-6 py-1 flex items-center justify-center hover:bg-white hover:border-white">
-                        <Link href="/">Marketing</Link>
+                    <div className="bg-transparent border-[1px] border-[#232323] rounded-3xl h-auto w-auto px-4 py-1 flex items-center justify-center hover:bg-white hover:border-white">
+                        <Link href="/services">Marketing</Link>
                     </div>
-                    <div className="bg-transparent border-[1px] border-[#232323] rounded-3xl h-auto w-auto px-6 py-1 flex items-center justify-center hover:bg-white hover:border-white">
-                        <Link href="/">Implementation</Link>
+                    <div className="bg-transparent border-[1px] border-[#232323] rounded-3xl h-auto w-auto px-4 py-1 flex items-center justify-center hover:bg-white hover:border-white">
+                        <Link href="/services">Implementation</Link>
                 </div>
               </div>
             </div>
